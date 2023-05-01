@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel='stylesheet' href="../CSS/main.css">
+
+</head>
+
+
+<body class='body_Archive_System'>
+  <div class="form">
+    <form name="loginform" action="confirmationLogin.php" method="post" onsubmit="return validateLogin(event)">
+      <h1>Login</h1>
+      <div class="content">
+        <div class="input-field">
+          <input type="email" placeholder="Email" autocomplete="nope" name="email" id="contac-email"
+            onkeyup="ValidateEmail()">
+          <span id="Email-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" autocomplete="nope" name="password" id="contac-password"
+            onkeyup="ValidatePassword()" required>
+          <span id="password-error"></span>
+        </div>
+      </div>
+      <div class="action">
+        <input type="submit" name="Submit" value=" Login" >
+      </div>
+    </form>
+  </div>
+  <script src="../JS/valedation.js"></script>
+
+</body>
+
+</html>

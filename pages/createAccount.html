@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="../CSS/main.css">
+
+
+</head>
+
+<body class="body_Archive_System">
+  <!--form to ceate an acounte-->
+  <div class="form">
+    <form onsubmit="return validateForm(event)" action="registration.php" method="POST" name="form1"  >
+      <h1>Create Account</h1>
+      <div class="content">
+        
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" name="fullName" id="contac-name" onkeyup="validateName()">
+          <span id="name-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" name="email" id="contac-email" onkeyup="ValidateEmail()">
+          <span id="Email-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" name="password" id="contac-password"
+            onkeyup="ValidatePassword()" required>
+          <span id="password-error"></span>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Confirm Password" id="contac-Copassword"
+          name="confirmpassword"  onkeyup="ValidateConfirmPassword()" required>
+          <span id="Copassword-error"></span>
+        </div>
+      </div>
+      <div class="action">
+        <input type="submit" value="Submit" name="Submit">
+      </div>
+
+    </form>
+  </div>
+  <script src="../JS/valedation.js"></script>
+
+
+</body>
+
+</html>
